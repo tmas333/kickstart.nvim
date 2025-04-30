@@ -20,12 +20,8 @@ return {
   opts = {
     workspaces = {
       {
-        name = 'personal',
-        path = '~/Documents/personal-1',
-      },
-      {
-        name = 'zk',
-        path = '~/zk',
+        name = 'nts',
+        path = '~/nts',
       },
     },
 
