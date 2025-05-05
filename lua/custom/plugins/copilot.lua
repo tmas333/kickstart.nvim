@@ -15,9 +15,13 @@ return {
           mapping = '<leader>apwa',
           description = 'Copilot: Write Atomic Note',
         },
+        -- You can add more prompts here
       },
-      -- You can add more prompts here
     },
+    config = function(_, opts)
+      require('CopilotChat').setup(opts)
+      vim.api.nvim_set_keymap('n', '<leader>ac', ':CopilotChat<CR>', { noremap = true, silent = true })
+    end,
     -- See Commands section for default commands if you want to lazy load on them
   },
 }
